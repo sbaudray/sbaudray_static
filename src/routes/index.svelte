@@ -87,7 +87,10 @@
 </style>
 
 <svelte:head>
-  <title>Home - sbaudray</title>
+  <title>sbaudray</title>
+  <meta
+    name="description"
+    content="Blog by Sebastien Baudray. Writing about web dev mostly" />
 </svelte:head>
 
 <h1>sbaudray</h1>

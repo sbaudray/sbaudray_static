@@ -64,7 +64,8 @@
 </style>
 
 <svelte:head>
-  <title>{post.data.title}</title>
+  <title>{post.data.title} - sbaudray</title>
+  <meta name="description" content={post.data.description} />
 </svelte:head>
 
 <h1><a href="/">sbaudray</a></h1>
