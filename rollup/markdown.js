@@ -27,7 +27,15 @@ async function transform(content, filePath) {
 
   let html = md.render(markdown);
 
-  let obj = JSON.stringify({ ...matter, slug, date, content: html });
+  // comments syntax highlighting is not accessible
+  let accessibleContent = html.replace(/#616E88/g, "#D8DEE9");
+
+  let obj = JSON.stringify({
+    ...matter,
+    slug,
+    date,
+    content: accessibleContent,
+  });
 
   return {
     code: `export default ${obj}`,

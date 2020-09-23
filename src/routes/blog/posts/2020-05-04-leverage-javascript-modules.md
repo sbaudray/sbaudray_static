@@ -37,17 +37,16 @@ import { create as createBook } from "./book";
 
 When working with a language like Elixir or ReScript, you can use a function from any module by simply referencing its name. No import needed! It would look like this:
 
-```ocaml
+```javascript
 // Film.res
 
-let create = () => {}
-
+let create = () => {};
 ```
 
-```ocaml
+```javascript
 // Elsewhere.res
 
-let newFilm = Film.create({ title: "Sonatine"})
+let newFilm = Film.create({ title: "Sonatine" });
 ```
 
 Note that there is no export statement either, a module is automatically defined for the file. The JavaScript equivalent would use the "wildcard import":
